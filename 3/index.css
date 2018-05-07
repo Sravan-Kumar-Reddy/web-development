@@ -1,0 +1,194 @@
+:root{
+  font-size: 18px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 3vw;
+}
+.banner{
+  display: flex;
+  flex-direction: column;
+  background: #ff6600;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px 2px #6699ff;
+  margin-bottom: 2vw;
+
+}
+.banner .heading {
+  color:#000000;
+  padding: 3vw;
+  font-size: 5 rem;
+  font-weight: bold;
+  margin-bottom:  1vw;
+  font-family: 'Philosopher', sans-serif;
+}
+.banner .sub-heading{
+  color: inherit;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 1.5rem;
+  margin: 2px;
+  padding: 0 5vw 2vw;/*Good to change i think*/
+}
+.banner .sub-heading button{
+  background: none;
+  border-color: #ff751a ;
+  border-radius: 5px;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 6px;
+  margin-top: 2vh;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: box-shadow 0.3s linear 0.1s;  /*What is this*/
+}
+.banner .sub-heading button:hover{
+  cursor: pointer;
+  box-shadow: 0 3px 20px 0 #cce6ff;/*Change Color and .....*/
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4vh;
+  margin-bottom: 2vw;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px 0 #161638;
+
+}
+.row .image{
+  padding: 1vw .5vw .5vw 0;
+}
+.row .my-image{
+  box-shadow: 0 3px 12px 0 #24245c;
+}
+.row2{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px 0 #21697D;
+}
+.row2 .image{
+  padding: 1vw 0vw 0vw .65vw;
+}
+.row2 .my-image{
+  box-shadow: 0 3px 20px 0 #36a9c9;
+}
+
+.row3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px 0 #0095FF;
+}
+.row3 .image{
+  padding: 1vw 0.5vw 0.2vw 0.2vw;
+}
+.row3 .my-image{
+  box-shadow: 0 3px 20px 0 #33aaff;
+}
+
+.row4{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px 0 #00749A;
+}
+.row4 .image{
+  padding:1vw 0.2vw 0.2vw 0.5vw;
+}
+.row4 .my-image{
+  box-shadow: 0 3px 20px 0 #00ace6;
+}
+/*
+.row .paragraph{
+  width: 600px;
+}*/
+.my-image {
+  /*border:1px solid;*/
+  border-radius: 7.5px;
+/*  box-shadow: 0px 3px 10px 2px #2c2c2c;*/
+  width: 25vw;
+}
+@media only screen and (max-width: 725px) {
+    .row{
+        flex-direction: column;
+    }
+    .row .image {
+        order: -1;
+    }
+    .row3 .image {
+        order: -1;
+    }
+    .row2 .image{
+        order: -1;
+    }
+    .row4 .image {
+        order: -1;
+    }
+    .my-image {
+        width: 60vw;
+    }
+    .row2 {
+        flex-direction: column;
+    }
+    .row3{
+      flex-direction: column;
+    }
+    .row4{
+      flex-direction: column;
+    }
+    .icon-group{
+      padding-left: 20vw;
+      padding-right: 20vw
+    }
+}
+.paragraph{
+  font-family: 'Arima Madurai', cursive;
+  color: #2c2c2c;
+  padding: 5vw 5vw 5vw 2vw;
+  text-align: justify;
+  line-height: 200%;
+
+}
+.paragraphr{
+  font-family: 'Arima Madurai', cursive;
+  padding: 2vw 5vw 5vw 5vw;
+  color: #2c2c2c;
+  text-align: justify;
+  line-height: 200%;
+}
+.icon-group {
+    margin-top: 2vh;
+    padding-left:40vw;
+}
+
+.icon-group .icon {
+    margin-right: 10px;
+    width: 25px;
+}
+.copyright{
+  height: 5vw;
+  background: black;
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
